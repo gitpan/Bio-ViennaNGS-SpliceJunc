@@ -21,3 +21,6 @@ Revision history for Perl extension Bio::ViennaNGS::SpliceJunc.
 0.03  Thu Oct 2 2014
 	- changed namespace to Bio::ViennaNGS::SpliceJunc
 	- updated documentation
+
+0.04  Fri Oct 3 2014
+	- bugfix in MANIFEST 

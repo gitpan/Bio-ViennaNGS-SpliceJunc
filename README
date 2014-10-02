@@ -1,0 +1,53 @@
+Bio-ViennaNGS-SpliceJunc
+========================
+
+Bio::ViennaNGS::SpliceJunc is a Perl module for Alternative Splicing (AS)
+analysis. It provides routines for identification and characterization of
+novel and existing (annotated) splice junctions from RNA-seq data.
+
+Identification of novel splice junctions is based on insecting potentially
+novel splice junctions from RNA-seq data with annotated splice junctions.
+
+INSTALLATION
+
+To install this module type the following:
+
+   perl Makefile.PL
+   make
+   make test
+   make install
+
+DEPENDENCIES
+
+This module requires these other modules and libraries:
+
+   Bio::ViennaNGS >= 0.09
+   IPC::Cmd
+   Path::Class
+   Carp
+
+Bio::ViennaNGS::SpliceJunc uses third-party tools for computing
+intersections of BED files: *bedtools intersect* from the BEDtools
+<http://bedtools.readthedocs.org/en/latest/content/tools/intersect.html>
+suite is used to compute overlaps and *bedtools sort* is used to sort BED
+output files. Make sure that those third-party utilities are available on
+your system, and that hey can be found and executed by the perl
+interpreter. We recommend installing the latest version of BEDtools
+<https://github.com/arq5x/bedtools2> on your system.
+
+AUTHOR
+
+Michael T. Wolfinger <michael@wolfinger.eu>
+
+COPYRIGHT AND LICENCE
+
+Copyright (C) 2014 Michael T. Wolfinger <michael@wolfinger.eu>
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself, either Perl version 5.16.3 or,
+at your option, any later version of Perl 5 you may have available.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.

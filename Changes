@@ -1,0 +1,23 @@
+Revision history for Perl extension Bio::ViennaNGS::SpliceJunc.
+
+0.01  Mon Sep 15 13:11:17 2014
+	- original version; created by h2xs 1.23 with options
+		-XA -n ViennaNGS::SpliceJunc
+	- added bed6_ss_from_bed12()
+	- added bed6_ss_from_segemehl_splits()
+	- added novel_sj_from_intersect_annot_segesplit()
+
+0.02  Wed Oct 1 2014
+	- updated documentation
+	- updated function names
+	- added '-nobuf' option to intersectBed syscall
+        - added a filter option  for maximum intron length
+	- added a filter option for canonical splice junctions
+	- use Carp for error handling
+	- use Path::Class for path construction
+	- use IPC::Cmd for calling third party utilities
+	- added tests
+
+0.03  Thu Oct 2 2014
+	- changed namespace to Bio::ViennaNGS::SpliceJunc
+	- updated documentation

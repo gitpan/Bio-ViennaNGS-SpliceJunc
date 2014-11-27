@@ -24,3 +24,8 @@ Revision history for Perl extension Bio::ViennaNGS::SpliceJunc.
 
 0.04  Fri Oct 3 2014
 	- bugfix in MANIFEST 
+
+0.05  Thu Nov 27 2014
+	- use Bio::ViennaNGS::Fasta objects
+	- added bed6_ss_to_bed12()
+	- updated documentation
